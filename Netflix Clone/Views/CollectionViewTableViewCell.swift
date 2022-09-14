@@ -36,7 +36,7 @@ class CollectionViewTableViewCell: UITableViewCell {
         super.layoutSubviews()
         collectionView.frame = contentView.bounds
     }
-    public func configure (titles: [Title]) {
+    public func configure(titles: [Title]) {
         self.titles = titles
         DispatchQueue.main.async { [weak self] in
             self?.collectionView.reloadData()
